@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   run_aye:
     docker:
-      image: circleci/node
+      - image: circleci/node
     working_directory: ~/
 
     steps:
