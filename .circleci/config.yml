@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   run_aye:
     machine:
-      image: circleci/node:12.22.5
+      image: circleci/node
     working_directory: ~/
 
     steps:
