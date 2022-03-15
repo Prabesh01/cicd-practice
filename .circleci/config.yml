@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  run_aye:
+    machine:
+      image: circleci/node:12.22.5
+    working_directory: ~/
+
+    steps:
+      - checkout
+      - run: node index.js
+workflows:
+  build_tests:
+    jobs:
+     - run_aye     
