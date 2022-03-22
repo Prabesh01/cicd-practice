@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  run_aye:
+  run_aaye:
     working_directory: ~/nod
     docker:
       - image: circleci/node
