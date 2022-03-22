@@ -1,15 +1,13 @@
 version: 2.1
 jobs:
   run_aye:
+    working_directory: ~/
     docker:
       - image: circleci/node
-    working_directory: ~/
-
     steps:
       - checkout
-      - setup_remote_docker:
-          version: 19.03.13
       - run: node index.js
+
 workflows:
   build_tests:
     jobs:
