@@ -1,11 +1,12 @@
 version: 2.1
 jobs:
   run_aye:
-    working_directory: ~/
+    working_directory: ~/nod/cicd
     docker:
       - image: circleci/node
     steps:
       - checkout
+        path: ~/nod
       - run: node index.js
 
 workflows:
