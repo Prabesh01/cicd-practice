@@ -6,7 +6,8 @@ jobs:
       - image: circleci/node
     steps:
       - checkout
-      - run: node test.js
+      - 
+      - run: node test/unit/test.js
 
 workflows:
   build_tests:

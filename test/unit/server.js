@@ -1,4 +1,4 @@
- var dt = require('./index');
+ var dt = require('../../src/server');
 
 function close_test() {
 process.exit(0)
