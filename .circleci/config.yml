@@ -3,7 +3,7 @@ jobs:
   run_aaye:
     working_directory: ~/nod
     docker:
-      - image: cimg/node
+      - image: cimg/node:18.0.0
     steps:
       - checkout
       - run: node test/unit/server.js
