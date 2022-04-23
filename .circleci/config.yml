@@ -3,7 +3,7 @@ jobs:
   run_aaye:
     working_directory: ~/nod
     docker:
-      - image: circleci/node
+      - image: cimg/node
     steps:
       - checkout
       - run: node test/unit/server.js
